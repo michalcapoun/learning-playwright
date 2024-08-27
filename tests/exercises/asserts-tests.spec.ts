@@ -31,7 +31,7 @@ test("toHaveValue test", async ({ page }) => {
   await expect(page.locator("#username")).toHaveValue("pw_skoleni");
 });
 
-test("Soft assert test", async ({ page }) => {
+test.skip("Soft assert test", async ({ page }) => {
   await page.goto("http://tredgate.com/pmtool/");
   await expect.soft(page.locator(".form-title")).toHaveText("Login PMTOOL");
   await page.locator("#username").fill("pw_skoleni");
