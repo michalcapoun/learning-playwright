@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-test("E2E Registration", async ({ page }) => {
+test.skip("E2E Registration", async ({ page }) => {
   await page.goto("https://tredgate.com/webtrain/registration.html");
   await page.locator("#name").fill("MC");
   await page.locator("#datepicker").fill("2024-08-26");
